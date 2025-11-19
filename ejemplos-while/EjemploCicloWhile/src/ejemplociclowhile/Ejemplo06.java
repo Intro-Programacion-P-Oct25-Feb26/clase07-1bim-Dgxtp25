@@ -31,24 +31,25 @@ public class Ejemplo06 {
                 + "estudiantes de su materia");
         // true 
         // while (bandera) {
-        while(bandera==true){
+        while(bandera==true){//true >> tue  false ==true
             System.out.println("Ingrese calificación");
-            calificacion = entrada.nextDouble();
+            calificacion = entrada.nextDouble();// 23 15
 
-            if (calificacion > 20) {
-                calificacion = 20;
+            if (calificacion > 20) {//23>20 V  15>20 f
+                calificacion = 20;//20
             }
-            suma_total = suma_total + calificacion;
-
+            suma_total = suma_total + calificacion;//0 + 20 = 20
+                                                   //20 + 15 = 35
             // proceso para salir del ciclo.
             System.out.println("Ingrese el valor -1 para salir del ciclo");
-            int temporal = entrada.nextInt();
+            int temporal = entrada.nextInt();//0 1
 
-            if (temporal == -1) {
-                bandera = false;
+            if (temporal == -1) {//0 == -1 falso -1 == -1 verdadero
+                bandera = false;// falso
             }
         }
 
+        // Suma de calificaciones 35.00
         System.out.printf("Suma de calificaciones es %.2f\n", suma_total);
 
     }
